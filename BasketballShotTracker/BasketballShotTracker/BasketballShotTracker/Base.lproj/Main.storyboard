@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasketballShotTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Average Will Be Displayed Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgJ-oO-4gZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bzg-I4-wld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwm-iT-2gm">
+                                <rect key="frame" x="187.5" y="40" width="187.5" height="587"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                <state key="normal" title="Miss">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Shot_Result:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W75-Sk-Qxp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Shots Made: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cp-cN-Rd9">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F2Q-Z9-VlT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H57-Nf-xBk">
+                                <rect key="frame" x="249" y="434" width="65" height="39"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Shot_Result:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s5k-nU-CSz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-9H-NsF">
+                                <rect key="frame" x="0.0" y="40" width="187.5" height="587"/>
+                                <color key="backgroundColor" red="0.23683726787567139" green="1" blue="0.012925776652991772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                <state key="normal" title="Made">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Shot_Result:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y00-yn-kIf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxW-JO-fZF">
+                                <rect key="frame" x="62.5" y="434" width="63" height="39"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Shot_Result:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8M5-ee-TT6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Cp-cN-Rd9" firstAttribute="top" secondItem="SIR-9H-NsF" secondAttribute="bottom" id="203-9b-haD"/>
+                            <constraint firstItem="iwm-iT-2gm" firstAttribute="leading" secondItem="SIR-9H-NsF" secondAttribute="trailing" id="4nQ-S0-UK2"/>
+                            <constraint firstItem="4Cp-cN-Rd9" firstAttribute="top" secondItem="iwm-iT-2gm" secondAttribute="bottom" id="7ST-kL-b8X"/>
+                            <constraint firstItem="OxW-JO-fZF" firstAttribute="centerX" secondItem="SIR-9H-NsF" secondAttribute="centerX" id="9hL-4C-eAf"/>
+                            <constraint firstItem="SIR-9H-NsF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="AIc-v3-IYm"/>
+                            <constraint firstItem="OxW-JO-fZF" firstAttribute="centerY" secondItem="SIR-9H-NsF" secondAttribute="centerY" constant="120" id="Hex-fd-MOc"/>
+                            <constraint firstAttribute="trailing" secondItem="HgJ-oO-4gZ" secondAttribute="trailing" id="L35-wR-pQe"/>
+                            <constraint firstAttribute="trailing" secondItem="4Cp-cN-Rd9" secondAttribute="trailing" id="Qat-4n-67p"/>
+                            <constraint firstItem="iwm-iT-2gm" firstAttribute="top" secondItem="HgJ-oO-4gZ" secondAttribute="bottom" id="TUV-Ea-XML"/>
+                            <constraint firstItem="H57-Nf-xBk" firstAttribute="centerY" secondItem="iwm-iT-2gm" secondAttribute="centerY" constant="120" id="V6h-50-59j"/>
+                            <constraint firstItem="H57-Nf-xBk" firstAttribute="centerX" secondItem="iwm-iT-2gm" secondAttribute="centerX" id="Xxf-XZ-4Yq"/>
+                            <constraint firstItem="SIR-9H-NsF" firstAttribute="top" secondItem="HgJ-oO-4gZ" secondAttribute="bottom" id="Y7h-yf-dVD"/>
+                            <constraint firstAttribute="trailing" secondItem="iwm-iT-2gm" secondAttribute="trailing" id="ZNZ-kj-KZm"/>
+                            <constraint firstItem="SIR-9H-NsF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dfi-lj-qth"/>
+                            <constraint firstItem="4Cp-cN-Rd9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i9d-Tw-fnX"/>
+                            <constraint firstItem="HgJ-oO-4gZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kDN-CB-Pmu"/>
+                            <constraint firstItem="HgJ-oO-4gZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tDx-Cs-KDa"/>
+                            <constraint firstItem="iwm-iT-2gm" firstAttribute="top" secondItem="HgJ-oO-4gZ" secondAttribute="bottom" id="ylK-lV-yU9"/>
+                            <constraint firstItem="4Cp-cN-Rd9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yuU-vY-sE0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Num_Shots" destination="4Cp-cN-Rd9" id="ERm-hD-M30"/>
+                        <outlet property="Result" destination="HgJ-oO-4gZ" id="B5t-Km-VVv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
